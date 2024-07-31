@@ -31,7 +31,7 @@ The mounting phase in React is when a component is being created and inserted in
   ```
   - **Note**: `super(props)` is required to access `this.props` in the constructor.
 
-## 1.2 static `getDerivedStateFromProps (props, state)`
+## 1.2 static `getDerivedStateFromProps(props, state)`
 
 - **Purpose**: This static method is called right before rendering when new props are received. It allows you to update the component’s state based on the incoming props.
 - **Usage**:
