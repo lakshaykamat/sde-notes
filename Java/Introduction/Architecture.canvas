@@ -1,0 +1,34 @@
+{
+	"nodes":[
+		{"id":"f9a03b8beeb25992","type":"group","x":-540,"y":300,"width":2330,"height":1380,"label":"Program Flow"},
+		{"id":"0d373c13560fd1e9","type":"group","x":-540,"y":-460,"width":960,"height":590,"label":"Java Runtime"},
+		{"id":"57dae3b9aa1f8141","type":"text","text":"## Class Loader","x":-493,"y":-360,"width":273,"height":60},
+		{"id":"b760a18960b7130f","type":"text","text":"## Byte Code Verifier","x":-493,"y":-260,"width":273,"height":60},
+		{"id":"ddf667e15723a52b","type":"file","file":"Dev/Java/Introduction/How Code Executes.md","x":-120,"y":-370,"width":400,"height":460},
+		{"id":"edcfbb9d71084d77","type":"text","text":"## Interpreter","x":-493,"y":-165,"width":273,"height":50},
+		{"id":"1be8b461e42177bb","type":"text","text":"## Run time","x":-493,"y":-80,"width":273,"height":50},
+		{"id":"5140b9d04dbab767","type":"text","text":"## Hardware","x":-493,"y":0,"width":273,"height":50},
+		{"id":"ac3f859b4d3a01db","type":"text","text":"### `.java`","x":-272,"y":460,"width":152,"height":61},
+		{"id":"3db136fe946286a0","type":"file","file":"Dev/Java/Introduction/JDK.md","x":-495,"y":560,"width":400,"height":400},
+		{"id":"c7826eda01f424c3","type":"file","file":"Dev/Java/Introduction/Byte code.md","x":-495,"y":1250,"width":400,"height":400},
+		{"id":"1fb6f7d534ae1df9","type":"file","file":"Dev/Java/Introduction/JRE.md","x":920,"y":1250,"width":400,"height":400},
+		{"id":"e1728d02cc70088b","type":"text","text":"## Executes","x":1500,"y":1425,"width":200,"height":50},
+		{"id":"3986f72c3e90931e","type":"text","text":"## Java Source Code","x":-451,"y":340,"width":313,"height":80},
+		{"id":"df09d053f1870d08","type":"file","file":"Dev/Java/Introduction/JVM.md","x":180,"y":1250,"width":400,"height":400},
+		{"id":"59403a52ac18eb3d","type":"file","file":"Media/Pasted image 20231217191814.png","x":75,"y":521,"width":693,"height":439},
+		{"id":"5bd48b6e879f0f55","type":"text","text":"#### Converts byte code into  Machine Code","x":620,"y":1280,"width":215,"height":100},
+		{"id":"1ab93a36e98d93ef","type":"text","text":"#### Converts into `.class` file via Java compiler `javac`","x":-260,"y":1040,"width":320,"height":100},
+		{"id":"b0047265e112fa09","type":"text","text":"![[JDK]]]","x":870,"y":560,"width":500,"height":370}
+	],
+	"edges":[
+		{"id":"ac57c0e3f7d6f581","fromNode":"57dae3b9aa1f8141","fromSide":"bottom","toNode":"b760a18960b7130f","toSide":"top"},
+		{"id":"0eb990b7424b4e1b","fromNode":"edcfbb9d71084d77","fromSide":"bottom","toNode":"1be8b461e42177bb","toSide":"top"},
+		{"id":"2bfa56e74a6134fc","fromNode":"1be8b461e42177bb","fromSide":"bottom","toNode":"5140b9d04dbab767","toSide":"top"},
+		{"id":"fbb1cc1b8b45e9a4","fromNode":"3986f72c3e90931e","fromSide":"bottom","toNode":"3db136fe946286a0","toSide":"top"},
+		{"id":"e9d98ad2160e544e","fromNode":"df09d053f1870d08","fromSide":"right","toNode":"1fb6f7d534ae1df9","toSide":"left"},
+		{"id":"177e023c586bde3f","fromNode":"1fb6f7d534ae1df9","fromSide":"right","toNode":"e1728d02cc70088b","toSide":"left"},
+		{"id":"cad2a95558ed97d1","fromNode":"b760a18960b7130f","fromSide":"bottom","toNode":"edcfbb9d71084d77","toSide":"top"},
+		{"id":"c69f0c9fce3d5118","fromNode":"3db136fe946286a0","fromSide":"bottom","toNode":"c7826eda01f424c3","toSide":"top"},
+		{"id":"5464423dc03bbe0d","fromNode":"c7826eda01f424c3","fromSide":"right","toNode":"df09d053f1870d08","toSide":"left"}
+	]
+}

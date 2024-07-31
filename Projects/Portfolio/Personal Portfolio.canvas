@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"dd12c1971b6d86c6","type":"file","file":"Dev/Projects/Portfolio/202312152259.md","x":-1180,"y":-280,"width":400,"height":400},
+		{"id":"5e929fa0e7ec30bb","type":"file","file":"Dev/Projects/Portfolio/202312152300.md","x":-640,"y":-280,"width":400,"height":400},
+		{"id":"19c8e1a1df831778","type":"file","file":"Dev/Projects/Portfolio/202312152258.md","x":-1720,"y":-280,"width":400,"height":400},
+		{"id":"453929091142fd4b","type":"file","file":"Dev/Projects/Portfolio/Personal Portfolio.md","x":-1180,"y":-1000,"width":400,"height":400},
+		{"id":"d13960e6120608cc","x":-1180,"y":-1120,"width":250,"height":60,"type":"text","text":"Stylesheet"}
+	],
+	"edges":[
+		{"id":"43019c8a48d98e1c","fromNode":"453929091142fd4b","fromSide":"bottom","toNode":"19c8e1a1df831778","toSide":"top"},
+		{"id":"ed0804350e0fb7ec","fromNode":"453929091142fd4b","fromSide":"bottom","toNode":"dd12c1971b6d86c6","toSide":"top"},
+		{"id":"eafcc11c9f1942d5","fromNode":"453929091142fd4b","fromSide":"bottom","toNode":"5e929fa0e7ec30bb","toSide":"top"}
+	]
+}

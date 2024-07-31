@@ -1,0 +1,10 @@
+{
+	"nodes":[
+		{"id":"4cdb61e2327efe72","type":"group","x":-560,"y":-480,"width":501,"height":100,"label":"Navbar"},
+		{"id":"4a33228652ea39ba","type":"text","text":"# Dashboard\nList all habits\n","x":-540,"y":-240,"width":462,"height":360},
+		{"id":"328749020078d689","type":"text","text":"Blogs","x":-220,"y":-460,"width":142,"height":50},
+		{"id":"0079b829b27af5be","type":"text","text":"Dashboard\n","x":-540,"y":-460,"width":141,"height":50},
+		{"id":"a377a184ebe08fe6","type":"text","text":"Settings","x":-375,"y":-460,"width":132,"height":50}
+	],
+	"edges":[]
+}
