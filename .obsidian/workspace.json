@@ -1,0 +1,242 @@
+{
+  "main": {
+    "id": "9d840d026edda659",
+    "type": "split",
+    "children": [
+      {
+        "id": "ce72798673905c43",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4522f91d59622103",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dev/Backend Dev/Databases/MongoDB/CheatSheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "428fa8797609749e",
+    "type": "split",
+    "children": [
+      {
+        "id": "0a58a6b03ba83c90",
+        "type": "tabs",
+        "dimension": 71.02199223803363,
+        "children": [
+          {
+            "id": "f4bbcb361366ae70",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2a4b7f0a248a568d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "stubs",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "89f1be06f4731d84",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "15b27ec8a86defa3",
+        "type": "tabs",
+        "dimension": 28.978007761966364,
+        "children": [
+          {
+            "id": "7aa55f9c1a0d4923",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          },
+          {
+            "id": "f842f33ac3513b65",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Dev/Backend Dev/Databases/MongoDB/CheatSheet.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 319.5
+  },
+  "right": {
+    "id": "d07e4f621a041903",
+    "type": "split",
+    "children": [
+      {
+        "id": "d987da9c37ee6791",
+        "type": "tabs",
+        "dimension": 56.004901960784316,
+        "children": [
+          {
+            "id": "bdfe57aaeb2d4947",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Dev/Backend Dev/Databases/MongoDB/CheatSheet.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4ee0091c0307a3b2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Dev/Backend Dev/Databases/MongoDB/CheatSheet.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "60bd81c6120fbeb5",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "afd978a31203698d",
+        "type": "tabs",
+        "dimension": 43.995098039215684,
+        "children": [
+          {
+            "id": "d1d4d4e7698fb7fb",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "d996103f6fd3f142",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 363.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "random-note:Open random note": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "4522f91d59622103",
+  "lastOpenFiles": [
+    "Dev/Backend Dev/Databases/Roadmap.md",
+    "Dev/Backend Dev/Databases/Indexes.md",
+    "Dev/Backend Dev/Databases/Normalization.md",
+    "Dev/Backend Dev/Databases/MongoDB/CheatSheet.md",
+    "Dev/Backend Dev/Roadmap.md",
+    "Dev/Backend Dev/Databases/SQL/13. Views.md",
+    "Dev/Backend Dev/Databases/SQL/12. Sub queries.md",
+    "Dev/Backend Dev/Databases/SQL/11. UNIONS.md",
+    "Dev/Backend Dev/Databases/SQL/10. JOINS.md",
+    "Dev/Backend Dev/Databases/SQL/9. Commands 3.md",
+    "Dev/Backend Dev/Databases/SQL/8. Primary and Foreign Keys.md",
+    "Dev/Backend Dev/Databases/SQL/2. Data Types.md",
+    "Dev/Backend Dev/Databases/SQL/7. Aggregate.md",
+    "Dev/Backend Dev/Databases/SQL/6. Commands 2.md",
+    "Dev/Backend Dev/Databases/SQL/5. Commands 1.md",
+    "Dev/Backend Dev/Databases/SQL/1. Introduction.md",
+    "Dev/Backend Dev/Databases/SQL/4. Keys and Constraints in SQL.md",
+    "Dev/Backend Dev/Databases/SQL/3. Types of SQL Commands.md",
+    "Dev/Backend Dev/Databases/SQL/SQL CheatSheet.md",
+    "Dev/Backend Dev/Databases/SQL",
+    "Dev/React/Introduction.md",
+    "Dev/React/LifeCycle/Updating.md",
+    "Dev/React/LifeCycle/Mounting.md",
+    "Dev/React/LifeCycle/Error Handling.md",
+    "Dev/React/LifeCycle/Unmounting.md",
+    "Dev/React/LifeCycle",
+    "Dev/React",
+    "Dev/Backend Dev/Databases/MongoDB/Untitled.md",
+    "Dev/Backend Dev/Databases/MongoDB/Roadmap.md",
+    "Dev/Backend Dev/Databases/MongoDB",
+    "Untitled",
+    "Dev/Backend Dev/Databases",
+    "Dev/Backend Dev/Spring Boot",
+    "Dev/System Design",
+    "Getnow Solutions",
+    "Dev/Backend Dev",
+    "Academics/Semester 4/AI/Images/Pasted image 20240529171801.png",
+    "Academics/Semester 4/AI/Images/Pasted image 20240518114917.png",
+    "Academics/Semester 4/AI/Images/Pasted image 20240518114516.png",
+    "Academics/Semester 4/AI/Images/Pasted image 20240518114159.png",
+    "Academics/Semester 2/DBMS/Unit 4 007c38506ef6405a90100cf1e2814720/Untitled.png",
+    "Academics/Semester 2/DBMS/Unit 3 3a5c8561df234dcbbb4ed3112282a8b2/Untitled.png",
+    "Academics/Semester 2/DBMS/Unit 3 3a5c8561df234dcbbb4ed3112282a8b2/Untitled 9.png",
+    "Academics/Semester 2/DBMS/Unit 3 3a5c8561df234dcbbb4ed3112282a8b2/Untitled 8.png",
+    "Academics/Semester 2/DBMS/Unit 3 3a5c8561df234dcbbb4ed3112282a8b2/Untitled 7.png",
+    "Academics/Semester 2/DBMS/Unit 3 3a5c8561df234dcbbb4ed3112282a8b2/Untitled 6.png",
+    "Dev/Java/Introduction/Architecture.canvas"
+  ]
+}
