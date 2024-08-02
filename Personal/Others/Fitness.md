@@ -1,5 +1,0 @@
----
-tags:
-  - "#fitness"
-  - "#self-care"
----
