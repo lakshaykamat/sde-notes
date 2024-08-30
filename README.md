@@ -1,5 +1,6 @@
-# Software Developer Notes
-## Table of Contents
+# 📝 Software Developer Notes
+Welcome to my curated collection of Software Development notes, resources, and projects. This repository is a one-stop hub for everything you need to thrive as a software developer, from learning resources to career preparation. Dive in and explore the various sections tailored to boost your skills and knowledge.
+## 📚 Table of Contents
 1. [Development](https://github.com/lakshaykamat/sde-notes/tree/main/Development)
 	-  [Backend Dev](https://github.com/lakshaykamat/sde-notes/tree/main/Development/Backend)
 	- [Frontend Dev]( https://github.com/lakshaykamat/sde-notes/tree/main/Development/Frontend )
