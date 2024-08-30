@@ -1,4 +1,4 @@
-Here are some best practices for designing RESTful APIs:
+# Best practices for designing RESTful APIs
 
 ### **1. Use Nouns for Resource URIs**
    - **Resource Naming**: Use clear, descriptive nouns to represent resources in the URI. Avoid using verbs.
@@ -14,19 +14,19 @@ Here are some best practices for designing RESTful APIs:
    - **PUT**: Update existing resources or create if not present (upsert).
    - **PATCH**: Partially update existing resources.
    - **DELETE**: Remove resources.
-   
-   Each method should be used consistently with its intended purpose.
+   - [[Status Codes|All Status Codes]] and [[HTTP Methods]]
 
 ### **4. Implement Proper Status Codes**
-   - Use standard HTTP status codes to indicate the result of a request:
-     - `200 OK`: Request succeeded.
-     - `201 Created`: New resource successfully created.
-     - `204 No Content`: Successful request with no response body (often used with DELETE).
-     - `400 Bad Request`: The request was invalid or cannot be served.
-     - `401 Unauthorized`: Authentication is required.
-     - `403 Forbidden`: The client does not have access rights.
-     - `404 Not Found`: Resource not found.
-     - `500 Internal Server Error`: A generic server error.
+   Use standard HTTP status codes to indicate the result of a request:
+-  `200 OK`: Request succeeded.
+- `201 Created`: New resource successfully created.
+- `204 No Content`: Successful request with no response body (often used with DELETE).
+- `400 Bad Request`: The request was invalid or cannot be served.
+- `401 Unauthorized`: Authentication is required.
+- `403 Forbidden`: The client does not have access rights.
+- `404 Not Found`: Resource not found.
+- `500 Internal Server Error`: A generic server error.
+- [[Status Codes|Other Status Codes]]
 
 ### **5. Use Consistent Naming Conventions**
    - **Plural vs. Singular**: Stick to either plural or singular nouns in your resource names (e.g., `/users` vs. `/user`). The common practice is to use plurals.

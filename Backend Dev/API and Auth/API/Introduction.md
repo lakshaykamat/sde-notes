@@ -1,4 +1,5 @@
 # RESTful API
+![]( https://images.ctfassets.net/vwq10xzbe6iz/5sBH4Agl614xM7exeLsTo7/9e84dce01735f155911e611c42c9793f/rest-api.png )
 
 ## 1. What is a RESTful API?
 - **Definition**: REST (Representational State Transfer) is an architectural style for designing networked applications. A RESTful API is an application programming interface (API) that adheres to the principles of REST, allowing communication between a client and a server.
@@ -30,39 +31,3 @@
 
 #### **5. REST vs SOAP**
 - **SOAP** (Simple Object Access Protocol) is another protocol for web services, but it is more complex and requires strict XML formatting. REST is simpler and can use JSON, XML, or other formats.
-
-#### **6. Common RESTful API Interview Questions**
-
-1. **What is REST, and what are its key principles?**
-   - Understand the definition of REST and be able to explain its principles, such as statelessness, uniform interface, and client-server architecture.
-
-2. **What are the differences between REST and SOAP?**
-   - Be prepared to discuss the simplicity and flexibility of REST compared to the rigid structure of SOAP.
-
-3. **How do you design a RESTful API?**
-   - Explain the best practices for designing RESTful APIs, such as using meaningful resource names, HTTP methods appropriately, and implementing versioning.
-
-4. **What is idempotency, and which HTTP methods are idempotent?**
-   - Define idempotency and identify which HTTP methods are idempotent (GET, PUT, DELETE, PATCH).
-
-5. **What are some common HTTP status codes used in RESTful APIs?**
-   - Discuss common status codes like 200 (OK), 201 (Created), 400 (Bad Request), 401 (Unauthorized), 404 (Not Found), and 500 (Internal Server Error).
-
-6. **How do you handle pagination in a RESTful API?**
-   - Explain techniques for implementing pagination, such as using query parameters (`? Page=2&limit=10`) or HTTP headers.
-
-7. **What is HATEOAS, and how is it used in RESTful APIs?**
-   - Describe HATEOAS and how it provides hypermedia links in the API response to guide clients on possible actions.
-
-8. **How do you implement security in RESTful APIs?**
-   - Discuss methods for securing APIs, including the use of API keys, OAuth, and JWT for authentication and authorization.
-
-9. **What are the advantages and disadvantages of using REST?**
-   - Be ready to discuss the benefits (simplicity, scalability, performance) and drawbacks (lack of state, over-fetching/under-fetching) of REST.
-
-10. **What is the difference between PUT and PATCH?**
-    - Explain the difference between PUT (which updates the entire resource) and PATCH (which partially updates the resource).
-
----
-
-These notes should give you a solid foundation for understanding RESTful APIs and preparing for interview questions related to them.
