@@ -3,13 +3,13 @@ The OSI Model is like a set of rules that helps computers talk to each other in 
 ![](https://media.geeksforgeeks.org/wp-content/uploads/20210220204638/cn1.png)
 
 ## 7 Layers
-1. [[physical-layer|Physcial Layer]]
-2. [[data-link-layer|Data Link Layer]]
-3. [[network-layer|Network Layer]]
-4. [[transport-layer|Transpot Layer]]
-5. [[session-layer|Session Layer]]
-6. [[presentation-layer|Presentation Layer]]
-7. [[application-layer|Application Layer]]
+1. [[Dev/Learning Resources/DevOps/osi-model/physical-layer|Physcial Layer]]
+2. [[Dev/Learning Resources/DevOps/osi-model/data-link-layer|Data Link Layer]]
+3. [[Dev/Learning Resources/DevOps/osi-model/network-layer|Network Layer]]
+4. [[Dev/Learning Resources/DevOps/osi-model/transport-layer|Transpot Layer]]
+5. [[Dev/Learning Resources/DevOps/osi-model/session-layer|Session Layer]]
+6. [[Dev/Learning Resources/DevOps/osi-model/presentation-layer|Presentation Layer]]
+7. [[Dev/Learning Resources/DevOps/osi-model/application-layer|Application Layer]]
 
 > **Trick to remember**
 > Layer 1 to 7: Please Do Not Throw Sausage Pizza Away

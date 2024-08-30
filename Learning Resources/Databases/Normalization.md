@@ -1,3 +1,4 @@
+# Database Normalization
 Database normalization is a systematic approach to organizing a database to reduce redundancy and improve data integrity. The process involves dividing a database into two or more tables and defining relationships between the tables. The goal is to ensure that each table contains only related data, reducing duplication and ensuring that data is stored efficiently. 
 
 Normalization typically involves several steps, referred to as "normal forms," each building upon the previous one to further refine the database structure. Here's a detailed explanation of the first five normal forms:

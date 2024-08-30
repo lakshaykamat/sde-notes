@@ -1,3 +1,4 @@
+# Indexes
 Indexes in SQL are special lookup tables that the database search engine can use to speed up data retrieval. They work like the index in a book, allowing the database to find data without scanning the entire table. Indexes can greatly improve query performance, but they also come with some trade-offs, such as additional storage requirements and slower write operations. 
 
 Here’s a detailed explanation of indexes in SQL:
