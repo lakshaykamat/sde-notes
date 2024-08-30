@@ -9,4 +9,5 @@ Welcome to my curated collection of Software Development notes, resources, and p
 3. [Career Preparation]( https://github.com/lakshaykamat/sde-notes/tree/main/Career%20Preparation )
 4. [Projects]( https://github.com/lakshaykamat/sde-notes/tree/main/Projects )
 5. [Roadmaps](https://github.com/lakshaykamat/sde-notes/tree/main/Roadmap) 
-	- [Databases](https://github.com/lakshaykamat/sde-notes/tree/main/Roadmap/Databases)
+	- [Databases](https://github.com/lakshaykamat/sde-notes/blob/main/Roadmap/Databases.md)
+	- [Node.js](https://github.com/lakshaykamat/sde-notes/blob/main/Roadmap/Node.%20Js%20Development%20Roadmap.md)
