@@ -6,7 +6,7 @@
 
 The React lifecycle consists of several phases that a component goes through from creation to removal. Understanding these phases helps in managing side effects, performance optimizations, and interacting with other parts of your application. Here’s a detailed explanation of each phase:
 
-![React life](https://dotnettrickscloud.blob.core.windows.net/article/react/3720230920232432.webp)
+![React life](https://user-images.githubusercontent.com/580982/38891432-8f319154-4241-11e8-9b8b-bf6e3c051e8a.jpg)
 
 ### 1. **Mounting** (Component is being created and inserted into the DOM)
 
