@@ -1,10 +1,12 @@
 ## Basic JavaScript Interview Questions and Answers
 
 ### 1. What is JavaScript?
+
 **Answer:**  
 JavaScript is a high-level, interpreted scripting language that is used to create and control dynamic website content, like interactive forms, animations, and other user interactions on web pages. It is a core technology of the web, alongside HTML and CSS.
 
 ### 2. What are variables in JavaScript? How do you declare them?
+
 **Answer:**  
 Variables are containers for storing data values. In JavaScript, you can declare variables using `var`, `let`, and `const`.
 
@@ -15,14 +17,17 @@ const city = 'New York'; // block-scoped and read-only
 ```
 
 ### 3. What are JavaScript operators?
+
 **Answer:**  
 Operators are used to perform operations on variables and values. JavaScript supports various types of operators including:
+
 - Arithmetic (`+`, `-`, `*`, `/`)
 - Comparison (`==`, `===`, `!=`, `!==`, `>`, `<`)
 - Logical (`&&`, `||`, `!`)
 - Assignment (`=`, `+=`, `-=`, etc.)
 
 ### 4. What are functions in JavaScript?
+
 **Answer:**  
 Functions are blocks of code designed to perform a particular task. They are executed when they are called (invoked).
 
@@ -34,6 +39,7 @@ console.log(greet('Alice')); // Hello, Alice
 ```
 
 ### 5. What are arrays in JavaScript?
+
 **Answer:**  
 Arrays are used to store multiple values in a single variable. They are a special type of object in JavaScript.
 
@@ -43,6 +49,7 @@ console.log(fruits[0]); // Apple
 ```
 
 ### 6. What is an object in JavaScript?
+
 **Answer:**  
 Objects are collections of properties, where each property is defined as a key-value pair. They are used to store various keyed collections and more complex entities.
 
@@ -56,6 +63,7 @@ console.log(person.name); // John
 ```
 
 ### 7. What is the purpose of `typeof` operator in JavaScript?
+
 **Answer:**  
 The `typeof` operator is used to determine the type of a variable.
 
@@ -71,6 +79,7 @@ Console.Log (typeof function (){}); // function
 ```
 
 ### 8. What is NaN in JavaScript?
+
 **Answer:**  
 `NaN` stands for Not-a-Number. It is a value representing a computational error.
 
@@ -80,6 +89,7 @@ Console.Log (Number ('abc')); // NaN
 ```
 
 ### 9. What is the use of `isNaN` function?
+
 **Answer:**  
 The `isNaN` function determines whether a value is NaN (Not-a-Number).
 
@@ -90,6 +100,7 @@ Console.Log (isNaN (123)); // false
 ```
 
 ### 10. What are template literals in JavaScript?
+
 **Answer:**  
 Template literals are string literals that allow embedded expressions. They are enclosed by backticks (`` ` ``) instead of quotes.
 
@@ -100,6 +111,7 @@ Console.Log (message); // Hello, John!
 ```
 
 ### 11. What are conditionals in JavaScript?
+
 **Answer:**  
 Conditionals are used to perform different actions based on different conditions. JavaScript supports `if`, `else if`, `else`, and `switch` statements.
 
@@ -113,6 +125,7 @@ If (age >= 18) {
 ```
 
 ### 12. What are loops in JavaScript?
+
 **Answer:**  
 Loops are used to execute a block of code multiple times. JavaScript supports `for`, `while`, and `do... While` loops.
 
@@ -123,7 +136,9 @@ For (let i = 0; i < 5; i++) {
 ```
 
 ### 13. What is the difference between `for` and `for... In` loops?
+
 **Answer:**
+
 - `for` loop is used to iterate over the values in an array or other iterable objects.
 - `for... In` loop is used to iterate over the properties of an object.
 
@@ -140,6 +155,7 @@ For (let key in object) {
 ```
 
 ### 14. What is a switch statement in JavaScript?
+
 **Answer:**  
 The `switch` statement is used to perform different actions based on different conditions.
 
@@ -158,6 +174,7 @@ Switch (fruit) {
 ```
 
 ### 15. What is an immediately invoked function expression (IIFE)?
+
 **Answer:**  
 An IIFE is a function that runs as soon as it is defined. It is often used to create a private scope to avoid variable hoisting and conflicts.
 
@@ -168,10 +185,12 @@ An IIFE is a function that runs as soon as it is defined. It is often used to cr
 ```
 
 ### 16. What is the DOM?
+
 **Answer:**  
 The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.
 
 ### 17. What is an event in JavaScript?
+
 **Answer:**  
 An event is an action or occurrence detected by the browser, such as a mouse click, a key press, or the loading of a web page. Events are used to trigger JavaScript functions to run.
 
@@ -182,7 +201,9 @@ document.getElementById('myButton').addEventListener('click', function() {
 ```
 
 ### 18. What is the difference between `window.onload` and `document.ready`?
-**Answer:**  
+
+**Answer:**
+
 - `window.onload` is an event that fires when the entire page, including all dependent resources such as stylesheets and images, has loaded.
 - `document.ready` (often used with libraries like jQuery) fires when the DOM is fully loaded, without waiting for stylesheets, images, and other resources to finish loading.
 
@@ -197,8 +218,10 @@ document.addEventListener('DOMContentLoaded', function() {
 ```
 
 ### 19. What are the different types of pop-up boxes available in JavaScript?
+
 **Answer:**  
 JavaScript provides three types of pop-up boxes:
+
 - `alert()`: Displays a message with an OK button.
 - `confirm()`: Displays a message with OK and Cancel buttons, returning true if OK is pressed and false otherwise.
 - `prompt()`: Displays a message with a text input field and OK and Cancel buttons, returning the input value or null if Cancel is pressed.
@@ -210,8 +233,10 @@ let name = prompt('What is your name?');
 ```
 
 ### 20. What are JavaScript data structures?
+
 **Answer:**  
 JavaScript provides several built-in data structures:
+
 - **Arrays:** Ordered collections of elements.
 - **Objects:** Collections of key-value pairs.
 - **Sets:** Collections of unique values.
@@ -225,6 +250,7 @@ let map = new Map([['key1', 'value1'], ['key2', 'value2']]);
 ```
 
 ### 21. How do you create an object in JavaScript?
+
 **Answer:**  
 Objects can be created using object literals, the `Object` constructor, or the `class` syntax introduced in ES 6.
 
@@ -251,6 +277,7 @@ let obj3 = new Person('Charlie', 35);
 ```
 
 ### 22. What is JSON and how is it used?
+
 **Answer:**  
 JSON (JavaScript Object Notation) is a lightweight data interchange format that is easy for humans to read and write and easy for machines to parse and generate. It is used to exchange data between a server and a web application.
 
@@ -268,6 +295,7 @@ console.log(newJsonString); // {"name":"Alice","age":25}
 ```
 
 ### 23. What are JavaScript events and how are they handled?
+
 **Answer:**  
 JavaScript events are actions that occur in the browser, such as clicks, key presses, or form submissions. Events are handled by assigning event listeners to HTML elements.
 
@@ -282,7 +310,9 @@ document.getElementById('myButton').addEventListener('click', function() {
 ```
 
 ### 24. What is the difference between `innerHTML` and `innerText`?
-**Answer:**  
+
+**Answer:**
+
 - `innerHTML` retrieves or sets the HTML content inside an element.
 - `innerText` retrieves or sets the text content inside an element, ignoring any HTML tags.
 
@@ -294,6 +324,7 @@ console.log(div.innerText); // Hello, world!
 ```
 
 ### 25. What are callback functions in JavaScript?
+
 **Answer:**  
 A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of action or routine.
 
@@ -314,6 +345,7 @@ greet('Alice', sayGoodbye);
 ```
 
 ### 26. What is the use of `addEventListener` in JavaScript?
+
 **Answer:**  
 `addEventListener` is used to attach an event handler to a specified element. It allows multiple event handlers for the same event and can be removed later with `removeEventListener`.
 
@@ -326,6 +358,7 @@ document.getElementById('myButton').addEventListener('click', handleClick);
 ```
 
 ### 27. What is the `this` keyword in JavaScript?
+
 **Answer:**  
 The `this` keyword refers to the object that is executing the current function. Its value can change depending on the context in which the function is called.
 
@@ -341,6 +374,7 @@ person.greet(); // Hello, Alice
 ```
 
 ### 28. What are prototypes in JavaScript?
+
 **Answer:**  
 Prototypes are objects from which other objects inherit properties. Every JavaScript object has a prototype, which is used for inheritance.
 
@@ -358,7 +392,9 @@ alice.greet(); // Hello, Alice
 ```
 
 ### 29. What is the difference between `call`, `apply`, and `bind`?
+
 **Answer:**
+
 - `call` invokes a function with a given `this` value and arguments provided individually.
 - `apply` invokes a function with a given `this` value and arguments provided as an array.
 - `bind` returns a new function, where `this` is bound to the provided value, allowing for partial application of function arguments.
@@ -377,6 +413,7 @@ boundGreet('!'); // Hey, Alice!
 ```
 
 ### 30. What are JavaScript Promises?
+
 **Answer:**  
 Promises are used to handle asynchronous operations in JavaScript. They represent a value that may be available now, in the future, or never. Promises have three states: `pending`, `fulfilled`, and `rejected`.
 

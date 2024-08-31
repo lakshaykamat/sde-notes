@@ -1,5 +1,3 @@
-Here are some important Node. Js interview questions along with their answers to help you prepare for your upcoming interview:
-
 ### 1. **What is Node. Js?**
    **Answer**: 
    Node. Js is a runtime environment that allows developers to execute JavaScript code on the server-side. It is built on the V 8 JavaScript engine, which is also used by Google Chrome, and uses an event-driven, non-blocking I/O model, making it efficient and scalable for building web applications.
