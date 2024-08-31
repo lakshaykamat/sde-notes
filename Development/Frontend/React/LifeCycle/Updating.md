@@ -2,7 +2,7 @@
 
 The updating phase occurs when a component is being re-rendered as a result of changes in props or state. Here’s a detailed explanation of each method in this phase:
 
-## 2.1 static `getDerivedStateFromProps(props, state) `
+## 2.1 `static getDerivedStateFromProps(props, state) `
 - **Purpose**: This static method is called right before rendering when new props are received. It allows you to update the component’s state based on the incoming props, ensuring that the state stays in sync with the props.
 - **Usage**:
   - **Derived State**: Use this method to derive or update state based on changes in props. This is especially useful when the component needs to reflect changes in its props through state.
@@ -45,7 +45,7 @@ The updating phase occurs when a component is being re-rendered as a result of c
   }
   ```
 
-## 2.3 `render ()`
+## 2.3 `render()`
 
 - **Purpose**: The `render()` method is required in all class components and returns the JSX that represents the component's UI. It’s called every time the component updates.
 - **Usage**:
@@ -65,7 +65,7 @@ The updating phase occurs when a component is being re-rendered as a result of c
   }
   ```
 
-## 2.4 `getSnapshotBeforeUpdate (prevProps, prevState)`
+## 2.4 `getSnapshotBeforeUpdate(prevProps, prevState)`
 
 - **Purpose**: Called right before the DOM is updated. It allows you to capture some information (such as scroll position) from the DOM before the update occurs.
 - **Usage**:

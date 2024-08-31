@@ -2,7 +2,7 @@
 
 Error handling in React is important for managing and gracefully handling errors that occur during rendering or in lifecycle methods. React provides special lifecycle methods to handle these errors and display fallback UIs.
 
-## 4.1 static `getDerivedStateFromError (error)`
+## 4.1 static `getDerivedStateFromError(error)`
 - **Purpose**: This static method is called when an error is thrown during rendering, in a lifecycle method, or in the constructor of any child component. It allows you to update the component’s state to render a fallback UI.
 - **Usage**:
   - **Error State**: Use this method to update the state of the component when an error occurs, so that you can render an error boundary UI or fallback content.

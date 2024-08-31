@@ -31,7 +31,7 @@ The mounting phase in React is when a component is being created and inserted in
   ```
   - **Note**: `super(props)` is required to access `this.props` in the constructor.
 
-## 1.2 static `getDerivedStateFromProps(props, state)`
+## 1.2 `static getDerivedStateFromProps(props, state)`
 
 - **Purpose**: This static method is called right before rendering when new props are received. It allows you to update the component’s state based on the incoming props.
 - **Usage**:
@@ -55,7 +55,7 @@ The mounting phase in React is when a component is being created and inserted in
   }
   ```
 
-## 1.3 `render () `
+## 1.3 `render() `
 
 - **Purpose**: The `render()` method is required in all class components. It returns the JSX that represents the component's UI.
 - **Usage**:
@@ -75,7 +75,7 @@ The mounting phase in React is when a component is being created and inserted in
   }
   ```
 
-## 1.4 `componentDidMount ()`
+## 1.4 `componentDidMount()`
 
 - **Purpose**: The `componentDidMount()` method is invoked immediately after a component is mounted (inserted into the DOM). It’s a good place to perform side effects like data fetching or subscriptions.
 - **Usage**:

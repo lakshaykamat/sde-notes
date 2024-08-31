@@ -2,7 +2,7 @@
 
 The unmounting phase occurs when a component is being removed from the DOM. This phase involves cleanup operations to ensure that resources are properly released and there are no memory leaks or unwanted side effects.
 
-## 3.1 `componentWillUnmount ()`
+## 3.1 `componentWillUnmount()`
 
 - **Purpose**: This method is called immediately before a component is unmounted and destroyed. It is used to perform cleanup tasks and release any resources that the component was using.
 - **Usage**:
