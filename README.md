@@ -40,11 +40,10 @@ Welcome to my curated collection of Software Development notes, resources, and p
 ---
 
 # Practical Problems
-1. Javascript
-2. SQL
-3. MongoDB
-4. Nodejs
-5. Reactjs
+| Title                                     | Full Link                                                                                                                                |
+|-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| [Javascript](#javascript-coding-problems) | [Link](https://github.com/lakshaykamat/sde-notes/blob/main/Learning%20Resources/Programming%20Languages/Javascript/Coding%20Problems.md) |
+
 
 ## React Interview Questions
 ### 1. **What is React, and why is it used?**
