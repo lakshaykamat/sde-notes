@@ -32,14 +32,14 @@ Welcome to my curated collection of Software Development notes, resources, and p
 
 ---
 # Interview Questions
-| Title      | Full Link |
-|------------|-----------|
-| [ReactJS](#react-interview-questions)    |      [Link](https://github.com/lakshaykamat/sde-notes/blob/main/Development/Frontend/React/React%20Interview%20Questions.md)     |
-| [JavaScript](#javascript-interview-questions) |   [Link](https://github.com/lakshaykamat/sde-notes/blob/main/Learning%20Resources/Programming%20Languages/Javascript/Interview%20Questions.md)        |
-| [NodeJS](#nodejs-interview-questions)     |     [Link](https://github.com/lakshaykamat/sde-notes/blob/main/Development/Backend/Nodejs/Interview%20Questions.md)      |
+| Title                                         | Full Link                                                                                                                                    |
+|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| [ReactJS](#react-interview-questions)         | [Link](https://github.com/lakshaykamat/sde-notes/blob/main/Development/Frontend/React/React%20Interview%20Questions.md)                      |
+| [JavaScript](#javascript-interview-questions) | [Link](https://github.com/lakshaykamat/sde-notes/blob/main/Learning%20Resources/Programming%20Languages/Javascript/Interview%20Questions.md) |
+| [NodeJS](#nodejs-interview-questions)         | [Link](https://github.com/lakshaykamat/sde-notes/blob/main/Development/Backend/Nodejs/Interview%20Questions.md)                              |
 ---
 
-## Practical Problems
+# Practical Problems
 1. Javascript
 2. SQL
 3. MongoDB
@@ -865,15 +865,15 @@ promise.then((message) => {
    - **Environment Variables**: Use environment variables to store sensitive information.
 
 ## Javascript Coding Problems
-| #   | Question                                                         | Difficulty  |
-|-----|------------------------------------------------------------------|-------------|
-| 1   | [Write a function in JavaScript to remove duplicate elements from an array.](https://github.com/lakshaykamat/sde-notes/blob/main/Career%20Preparation/javascript-questions/easy/removeDuplicates.js) | Easy        |
-| 2   | [Write a JavaScript function that takes an array of numbers and returns a new array with only the even numbers.](https://github.com/lakshaykamat/sde-notes/blob/main/Career%20Preparation/javascript-questions/easy/sortEvenNumbers.js) | Easy        |
-| 3   | [Write a JavaScript function to check if a given string is a palindrome (reads the same forwards and backwards).](https://github.com/lakshaykamat/sde-notes/blob/main/Career%20Preparation/javascript-questions/easy/palindrome.js) | Easy        |
-| 4   | [Write a JavaScript program to find the maximum number in an array.](https://github.com/lakshaykamat/sde-notes/blob/main/Career%20Preparation/javascript-questions/easy/maxNumber.js) | Easy        |
-| 5   | [Write a JavaScript function to check if a given number is prime.](https://github.com/lakshaykamat/sde-notes/blob/main/Career%20Preparation/javascript-questions/easy/isPrimeNumber.js)  | Easy      |
-| 6   | [Write a JavaScript function to print the Fibonacci series up to the nth number.](https://github.com/lakshaykamat/sde-notes/blob/main/Career%20Preparation/javascript-questions/easy/fibonacci.js) | Easy      |
-| 7   | [Write a JavaScript program to calculate the factorial of a given number.](https://github.com/lakshaykamat/sde-notes/blob/main/Career%20Preparation/javascript-questions/easy/factorial.js) | Easy      |
+| # | Question                                                                                                                                                                                                                                | Difficulty |
+|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
+| 1 | [Write a function in JavaScript to remove duplicate elements from an array.](https://github.com/lakshaykamat/sde-notes/blob/main/Career%20Preparation/javascript-questions/easy/removeDuplicates.js)                                    | Easy       |
+| 2 | [Write a JavaScript function that takes an array of numbers and returns a new array with only the even numbers.](https://github.com/lakshaykamat/sde-notes/blob/main/Career%20Preparation/javascript-questions/easy/sortEvenNumbers.js) | Easy       |
+| 3 | [Write a JavaScript function to check if a given string is a palindrome (reads the same forwards and backwards).](https://github.com/lakshaykamat/sde-notes/blob/main/Career%20Preparation/javascript-questions/easy/palindrome.js)     | Easy       |
+| 4 | [Write a JavaScript program to find the maximum number in an array.](https://github.com/lakshaykamat/sde-notes/blob/main/Career%20Preparation/javascript-questions/easy/maxNumber.js)                                                   | Easy       |
+| 5 | [Write a JavaScript function to check if a given number is prime.](https://github.com/lakshaykamat/sde-notes/blob/main/Career%20Preparation/javascript-questions/easy/isPrimeNumber.js)                                                 | Easy       |
+| 6 | [Write a JavaScript function to print the Fibonacci series up to the nth number.](https://github.com/lakshaykamat/sde-notes/blob/main/Career%20Preparation/javascript-questions/easy/fibonacci.js)                                      | Easy       |
+| 7 | [Write a JavaScript program to calculate the factorial of a given number.](https://github.com/lakshaykamat/sde-notes/blob/main/Career%20Preparation/javascript-questions/easy/factorial.js)                                             | Easy       |
 
 ## 🌟 Highlights
 
