@@ -32,11 +32,13 @@ Welcome to my curated collection of Software Development notes, resources, and p
 
 ---
 # Interview Questions
-| Title                                         | Full Link                                                                                                                                    |
-|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| [ReactJS](#react-interview-questions)         | [Link](https://github.com/lakshaykamat/sde-notes/blob/main/Development/Frontend/React/React%20Interview%20Questions.md)                      |
-| [JavaScript](#javascript-interview-questions) | [Link](https://github.com/lakshaykamat/sde-notes/blob/main/Learning%20Resources/Programming%20Languages/Javascript/Interview%20Questions.md) |
-| [NodeJS](#nodejs-interview-questions)         | [Link](https://github.com/lakshaykamat/sde-notes/blob/main/Development/Backend/Nodejs/Interview%20Questions.md)                              |
+| Title                                                            | Full Link                                                                                                                                    |
+|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| [ReactJS](#react-interview-questions)                            | [Link](https://github.com/lakshaykamat/sde-notes/blob/main/Development/Frontend/React/React%20Interview%20Questions.md)                      |
+| [JavaScript](#javascript-interview-questions)                    | [Link](https://github.com/lakshaykamat/sde-notes/blob/main/Learning%20Resources/Programming%20Languages/Javascript/Interview%20Questions.md) |
+| [NodeJS](#nodejs-interview-questions)                            | [Link](https://github.com/lakshaykamat/sde-notes/blob/main/Development/Backend/Nodejs/Interview%20Questions.md)                              |
+| [Application Programm Interface (API)](#api-interview-questions) | [Link](https://github.com/lakshaykamat/sde-notes/blob/main/Development/Backend/API%20and%20Auth/API/Interview%20Questions.md)                |
+| [Authentication and Authorization](#auth-interview-questions)    | [Link](https://github.com/lakshaykamat/sde-notes/blob/main/Development/Backend/API%20and%20Auth/Auth/Interview%20Questions.md)               |
 ---
 
 # Practical Problems
@@ -862,6 +864,270 @@ promise.then((message) => {
    - **Rate Limiting**: Prevent DDoS attacks by limiting the number of requests.
    - **Authentication**: Implement secure authentication using JWT, OAuth, etc.
    - **Environment Variables**: Use environment variables to store sensitive information.
+
+# API Interview Questions 
+### 1. **What is REST, and what are its key principles?**
+
+**REST** (Representational State Transfer) is an architectural style used for designing networked applications. It relies on a stateless, client-server communication model where requests are made using standard HTTP methods (GET, POST, PUT, DELETE, etc.).
+
+**Key Principles of REST:**
+- **Statelessness**: Each request from a client to a server must contain all the information needed to understand and process the request. The server does not store any state between requests.
+- **Client-Server Architecture**: The client and server are separate entities. The client handles the user interface and user state, while the server manages the data and logic.
+- **Uniform Interface**: REST uses standard HTTP methods and URIs to provide a consistent interface for accessing resources.
+- **Cacheability**: Responses from the server can be marked as cacheable, allowing clients to reuse data and reduce load on the server.
+- **Layered System**: The client does not know if it is connected directly to the server or through intermediaries, such as load balancers or proxies.
+- **Code on Demand (optional)**: Servers can extend client functionality by transferring executable code (e.g., JavaScript) to the client.
+
+### 2. **What are the differences between REST and SOAP?**
+
+**REST**:
+- **Simplicity**: REST is simpler and easier to implement, using standard HTTP methods and typically JSON or XML for data exchange.
+- **Flexibility**: REST allows a variety of data formats (JSON, XML, HTML, etc.) and is stateless, making it more scalable.
+- **Performance**: REST is more performant due to its stateless nature and ability to cache responses.
+- **Use Cases**: Commonly used in web services, mobile applications, and public APIs.
+
+**SOAP** (Simple Object Access Protocol):
+- **Complexity**: SOAP is more complex, requiring strict XML formatting and adherence to the WS-* standards.
+- **Protocol**: SOAP is a protocol with built-in error handling, security (WS-Security), and transaction management, making it suitable for enterprise applications.
+- **Statefulness**: SOAP can be stateful, supporting operations like transactions and sessions.
+- **Use Cases**: Often used in enterprise environments for operations that require ACID compliance, high security, and formal contracts (WSDL).
+
+### 3. **How do you design a RESTful API?**
+
+**Best Practices for Designing RESTful APIs**:
+- **Use Nouns for Resource Names**: URIs should represent resources using nouns (e.g., `/users`, `/orders`), not actions or verbs.
+- **Use HTTP Methods Appropriately**:
+  - **GET** for retrieving resources.
+  - **POST** for creating new resources.
+  - **PUT** for updating existing resources or creating resources if they don’t exist (idempotent).
+  - **PATCH** for partially updating resources.
+  - **DELETE** for removing resources.
+- **Use HTTP Status Codes**: Use appropriate status codes to communicate the result of an API request (`200 OK`, `201 Created`, `404 Not Found`, etc.).
+- **Versioning**: Version your API (e.g., `/v1/users`) to handle changes without breaking existing clients.
+- **Handle Pagination, Filtering, and Sorting**: Implement pagination, filtering, and sorting to manage large datasets efficiently (`/users?page=2&limit=10`).
+- **Security**: Use authentication and authorization (e.g., API keys, OAuth, JWT) to secure the API.
+- **Documentation**: Provide clear API documentation to help developers understand how to use your API.
+
+### 4. **What is idempotency, and which HTTP methods are idempotent?**
+
+**Idempotency** refers to the property of certain operations where performing the same operation multiple times yields the same result. In the context of HTTP, an idempotent method means that making multiple identical requests will not change the state of the resource beyond the initial application.
+
+**Idempotent HTTP Methods**:
+- **GET**: Retrieving the same resource multiple times does not alter the resource.
+- **PUT**: Updating a resource with the same data repeatedly results in the same resource state.
+- **DELETE**: Deleting a resource multiple times results in the resource being removed (if it exists) or remains removed.
+- **PATCH**: Partially updating a resource multiple times with the same data results in the same state.
+
+**Non-Idempotent HTTP Method**:
+- **POST**: Sending the same data multiple times can result in multiple resources being created, making it non-idempotent.
+
+### 5. **What are some common HTTP status codes used in RESTful APIs?**
+
+- **200 OK**: The request was successful, and the server returned the requested resource.
+- **201 Created**: A new resource was successfully created as a result of the request.
+- **204 No Content**: The request was successful, but there is no content to return (often used with DELETE).
+- **400 Bad Request**: The server could not understand the request due to invalid syntax or bad data.
+- **401 Unauthorized**: The client must authenticate itself to get the requested resource.
+- **403 Forbidden**: The client does not have access rights to the resource.
+- **404 Not Found**: The server cannot find the requested resource.
+- **500 Internal Server Error**: The server encountered an unexpected condition that prevented it from fulfilling the request.
+
+### 6. **How do you handle pagination in a RESTful API?**
+
+**Techniques for Implementing Pagination**:
+- **Query Parameters**: Use query parameters to specify the page number and the number of items per page.
+  - Example: `/users?page=2&limit=10` retrieves the second page of users with 10 users per page.
+- **Link Headers**: Include links in the response headers to indicate the next, previous, first, and last pages.
+  - Example: 
+    ```
+    Link: <https://api.example.com/users?page=1&limit=10>; rel="first",
+          <https://api.example.com/users?page=3&limit=10>; rel="next",
+          <https://api.example.com/users?page=10&limit=10>; rel="last"
+    ```
+- **Offset and Limit**: Use `offset` to indicate where the results start, and `limit` to specify the number of results to return.
+  - Example: `/users?offset=20&limit=10` retrieves 10 users starting from the 21 st user.
+- **Cursor-Based Pagination**: Use a cursor (a pointer to a specific record in the result set) for efficient pagination, especially with large datasets.
+  - Example: `/users?cursor=xyz123&limit=10`.
+
+### 7. **What is HATEOAS, and how is it used in RESTful APIs?**
+
+**HATEOAS** (Hypermedia as the Engine of Application State) is a constraint of REST that requires the server to provide hyperlinks in its responses. These hyperlinks guide clients on what actions they can take next.
+
+**Usage in RESTful APIs**:
+- When a client requests a resource, the server responds with the resource's representation, along with links to related actions or resources.
+- **Example**:
+  ```json
+  {
+    "userId": 123,
+    "name": "John Doe",
+    "links": [
+      {
+        "rel": "self",
+        "href": "/users/123",
+        "method": "GET"
+      },
+      {
+        "rel": "update",
+        "href": "/users/123",
+        "method": "PUT"
+      },
+      {
+        "rel": "delete",
+        "href": "/users/123",
+        "method": "DELETE"
+      }
+    ]
+  }
+  ```
+  - Here, the response includes links to view, update, or delete the user, guiding the client on what actions can be performed.
+
+### 8. **How do you implement security in RESTful APIs?**
+
+**Methods for Securing RESTful APIs**:
+- **API Keys**: Simple method where each request must include an API key in the request header for authentication.
+- **OAuth**: A widely used authorization framework that allows third-party services to exchange access tokens without exposing user credentials.
+  - **OAuth 2.0** is the most common version, allowing the use of tokens to access resources on behalf of a user.
+- **JWT (JSON Web Token)**: A compact, URL-safe token that represents claims between two parties. Used for stateless authentication, where the server does not need to maintain session data.
+  - **Token Structure**: Consists of a header, payload, and signature.
+- **HTTPS**: Always use HTTPS to encrypt data in transit, protecting it from being intercepted by attackers.
+- **Rate Limiting**: Prevent abuse by limiting the number of requests a client can make in a given period.
+- **CORS (Cross-Origin Resource Sharing)**: Configure CORS policies to control which domains can access your API.
+
+### 9. **What are the advantages and disadvantages of using REST?**
+
+**Advantages of REST**:
+- **Simplicity**: REST is easy to implement and understand, using standard HTTP methods and formats like JSON.
+- **Scalability**: REST’s stateless nature makes it easier to scale horizontally across multiple servers.
+- **Flexibility**: REST allows for a wide variety of data formats and is not tied to any specific protocol or architecture.
+- **Performance**: REST can leverage caching, reducing server load and improving response times.
+
+**Disadvantages of REST**:
+- **Lack of State**: Since REST is stateless, each request must contain all necessary information, which can
+
+ Lead to overhead in complex interactions.
+- **Over-fetching/Under-fetching**: Clients may receive more or less data than needed, as REST APIs typically return fixed data structures.
+- **Limited Security**: REST relies on HTTPS and additional layers for security, which can be less robust than SOAP’s built-in security features.
+
+### 10. **What is the difference between PUT and PATCH?**
+
+**PUT**:
+- **Purpose**: Update an entire resource with new data. If the resource does not exist, it may be created.
+- **Idempotency**: PUT is idempotent, meaning multiple identical requests will produce the same result.
+- **Use Case**: Replacing a user’s profile (`PUT /users/123`) with new data.
+
+**PATCH**:
+- **Purpose**: Partially update a resource with new data. It is used when only certain fields need to be updated.
+- **Idempotency**: PATCH is also idempotent, but the result depends on the provided data.
+- **Use Case**: Updating just the email field of a user’s profile (`PATCH /users/123`) without affecting other fields.
+
+# Auth Interview Questions
+### **1. What is the difference between authentication and authorization?**
+- **Answer**: 
+  - **Authentication** is the process of verifying the identity of a user or entity. It determines "who you are." 
+  - **Authorization** is the process of determining if the authenticated user has permission to access a resource or perform an action. It determines "what you are allowed to do."
+  - **Example**: When you log into a system (authentication), the system then checks if you have the rights to access specific resources or perform actions like editing data (authorization).
+
+### **2. What is JWT, and how does it work?**
+- **Answer**: 
+  - **JWT (JSON Web Token)** is a compact, URL-safe token used for transmitting claims between two parties. It consists of three parts: Header, Payload, and Signature.
+  - **How it works**:
+    - **Header**: Contains the token type (JWT) and signing algorithm (e.g., HMAC SHA 256).
+    - **Payload**: Contains the claims, which are statements about an entity (usually the user) and additional metadata.
+    - **Signature**: Created by encoding the header and payload and then signing it with a secret key or RSA private key.
+    - **Usage**: The token is sent by the client in the `Authorization` header (`Bearer <token>`) with each request. The server verifies the signature to ensure the token’s integrity and authenticity.
+
+### **3. What are the common methods of implementing authentication in web applications?**
+- **Answer**: 
+  - **Basic Authentication**: Credentials are sent in the `Authorization` header encoded in Base 64 with each request.
+  - **Token-Based Authentication**: After successful login, the server issues a token (e.g., JWT) that the client uses for subsequent requests.
+  - **OAuth 2.0**: A framework that allows third-party services to exchange tokens without exposing user credentials, often used in social logins.
+  - **SAML (Security Assertion Markup Language)**: Used for Single Sign-On (SSO) in enterprise environments.
+  - **Multi-Factor Authentication (MFA)**: Requires two or more verification factors, such as something you know (password) and something you have (mobile phone).
+
+### **4. What is OAuth 2.0, and how does it differ from OAuth 1.0?**
+- **Answer**:
+  - **OAuth 2.0** is an authorization framework that allows third-party applications to access a user’s resources without exposing their credentials. It uses tokens to grant access.
+  - **Differences from OAuth 1.0**:
+    - **Simpler**: OAuth 2.0 is more straightforward and uses tokens instead of signatures for requests, making it easier to implement.
+    - **More Secure**: OAuth 2.0 requires SSL/TLS, whereas OAuth 1.0 allowed plaintext communication, leading to potential vulnerabilities.
+    - **Token Types**: OAuth 2.0 introduces access tokens, refresh tokens, and the concept of scopes, providing more granular control over permissions.
+
+### **5. What is the principle of "least privilege," and why is it important in authorization?**
+- **Answer**:
+  - **Principle of Least Privilege**: This principle states that users and services should be granted the minimum level of access necessary to perform their tasks.
+  - **Importance**:
+    - **Security**: Reduces the attack surface by limiting what an attacker can do if they gain access.
+    - **Minimizes Risk**: Prevents users from accidentally or maliciously performing unauthorized actions.
+    - **Compliance**: Many regulations require enforcing least privilege to protect sensitive data.
+
+### **6. How does Multi-Factor Authentication (MFA) improve security?**
+- **Answer**:
+  - **MFA** adds an additional layer of security by requiring two or more independent credentials before granting access. These factors typically include:
+    - **Something you know**: A password or PIN.
+    - **Something you have**: A physical token, mobile phone (for SMS codes or app-based authentication).
+    - **Something you are**: Biometric verification, such as fingerprints or facial recognition.
+  - **Improvement**:
+    - **Reduces Reliance on Passwords**: Even if a password is compromised, the additional factor (s) provide a strong defense against unauthorized access.
+    - **Mitigates Common Attacks**: Protects against phishing, password spraying, and other common attacks.
+
+### **7. What is the purpose of using access tokens and refresh tokens in OAuth 2.0?**
+- **Answer**:
+  - **Access Token**: A short-lived token used to access protected resources. It is included in API requests to prove the identity of the client.
+  - **Refresh Token**: A long-lived token that can be used to obtain a new access token without re-authenticating. This allows for continuous access without requiring the user to log in repeatedly.
+  - **Purpose**:
+    - **Security**: Limits the exposure of the user's credentials by not requiring them to be sent with each request.
+    - **Convenience**: Allows clients to remain logged in for longer periods without asking users to re-authenticate frequently.
+
+### **8. What are some common security vulnerabilities in authentication systems, and how can they be mitigated?**
+- **Answer**:
+  - **Brute Force Attacks**: Attackers attempt to guess passwords by trying many combinations.
+    - **Mitigation**: Implement rate limiting, account lockout mechanisms, and use CAPTCHA after several failed attempts.
+  - **Phishing Attacks**: Attackers trick users into revealing their credentials via fake login pages or deceptive emails.
+    - **Mitigation**: Educate users, implement MFA, and use email filters.
+  - **Session Hijacking**: Attackers steal session cookies or tokens to impersonate a user.
+    - **Mitigation**: Use secure (HttpOnly, Secure) cookies, implement token expiration, and enforce HTTPS.
+  - **Cross-Site Request Forgery (CSRF)**: Attackers trick users into submitting requests on their behalf.
+    - **Mitigation**: Use anti-CSRF tokens and require re-authentication for sensitive actions.
+
+### **9. What is Role-Based Access Control (RBAC), and how does it differ from Attribute-Based Access Control (ABAC)?**
+- **Answer**:
+  - **Role-Based Access Control (RBAC)**: Users are assigned roles, and roles are granted permissions to access resources.
+    - **Example**: An "admin" role might have access to all resources, while a "user" role has limited access.
+  - **Attribute-Based Access Control (ABAC)**: Access is granted based on attributes (user attributes, resource attributes, environment conditions).
+    - **Example**: A user can access a document only if they are in a specific department, the document is classified as public, and it is during business hours.
+  - **Differences**:
+    - **RBAC** is simpler and easier to manage, suitable for environments with clear role hierarchies.
+    - **ABAC** is more granular and flexible, allowing for complex access control decisions based on various attributes.
+
+### **10. What are API keys, and how do they differ from OAuth tokens?**
+- **Answer**:
+  - **API Keys**: Simple tokens used to authenticate a client making API requests. They are typically sent as a query parameter or in the header of an HTTP request.
+  - **OAuth Tokens**: More complex tokens that represent the identity of a user and their permissions. OAuth tokens are often JWTs and include claims that specify what actions can be performed.
+  - **Differences**:
+    - **API Keys**: Generally static, providing simple authentication. They do not inherently include permissions or scopes.
+    - **OAuth Tokens**: Include detailed information about the user and what they are authorized to do. They are more secure and support granular access control.
+
+### **11. How do you securely store passwords?**
+- **Answer**:
+  - **Hashing**: Passwords should never be stored in plain text. Instead, they should be hashed using a strong, one-way hashing algorithm like bcrypt, scrypt, or Argon 2.
+  - **Salting**: A unique salt (random data) should be added to each password before hashing to protect against rainbow table attacks.
+  - **Pepper**: An additional secret value known only to the server can be added to the hash, further strengthening password security.
+  - **Iteration**: The hashing algorithm should be computationally intensive to slow down brute-force attacks.
+
+### **12. What is Cross-Site Request Forgery (CSRF), and how can it be prevented?**
+- **Answer**:
+  - **CSRF**: An attack where an attacker tricks a user into performing actions on a web application where they are authenticated, without their consent.
+  - **Prevention**:
+    - **Anti-CSRF Tokens**: Include a unique token in each form submission or AJAX request that the server validates. The token ensures that the request is coming from the legitimate user.
+    - **SameSite Cookies**: Set cookies with the `SameSite` attribute to ensure they are only sent with requests from the same origin.
+    - **Double Submit Cookie**: Include the CSRF token in both the cookie and the request, and verify that they match.
+
+### **13. What are the common HTTP status codes related to authentication and authorization?**
+- **Answer**:
+  - **401 Unauthorized**: The request requires authentication, but the client has not provided valid credentials.
+  - **403 Forbidden**: The client’s credentials are valid, but they do not have
+
+---
 
 # Javascript Coding Problems
 | # | Question                                                                                                                                                                                                                                | Difficulty |
