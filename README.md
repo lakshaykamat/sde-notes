@@ -32,15 +32,11 @@ Welcome to my curated collection of Software Development notes, resources, and p
 
 ---
 # Interview Questions
-1. [ReactJS](#react-interview-questions)
-2. [JavaScript](#javascript-interview-questions)
-3. [NodeJS](#nodejs-interview-questions)
-
 | Title      | Full Link |
 |------------|-----------|
-| [ReactJS](#react-interview-questions)    |      https://github.com/lakshaykamat/sde-notes/blob/main/Development/Frontend/React/React%20Interview%20Questions.md     |
-| [JavaScript](#javascript-interview-questions) |   https://github.com/lakshaykamat/sde-notes/blob/main/Learning%20Resources/Programming%20Languages/Javascript/Interview%20Questions.md        |
-| [NodeJS](#nodejs-interview-questions)     |     https://github.com/lakshaykamat/sde-notes/blob/main/Development/Backend/Nodejs/Interview%20Questions.md      |
+| [ReactJS](#react-interview-questions)    |      [Link](https://github.com/lakshaykamat/sde-notes/blob/main/Development/Frontend/React/React%20Interview%20Questions.md)     |
+| [JavaScript](#javascript-interview-questions) |   [Link](https://github.com/lakshaykamat/sde-notes/blob/main/Learning%20Resources/Programming%20Languages/Javascript/Interview%20Questions.md)        |
+| [NodeJS](#nodejs-interview-questions)     |     [Link](https://github.com/lakshaykamat/sde-notes/blob/main/Development/Backend/Nodejs/Interview%20Questions.md)      |
 ---
 
 ## Practical Problems
