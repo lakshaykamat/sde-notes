@@ -39,12 +39,16 @@ Welcome to my curated collection of Software Development notes, resources, and p
 | [NodeJS](#nodejs-interview-questions)                            | [Link](https://github.com/lakshaykamat/sde-notes/blob/main/Development/Backend/Nodejs/Interview%20Questions.md)                              |
 | [Application Programm Interface (API)](#api-interview-questions) | [Link](https://github.com/lakshaykamat/sde-notes/blob/main/Development/Backend/API%20and%20Auth/API/Interview%20Questions.md)                |
 | [Authentication and Authorization](#auth-interview-questions)    | [Link](https://github.com/lakshaykamat/sde-notes/blob/main/Development/Backend/API%20and%20Auth/Auth/Interview%20Questions.md)               |
+| [Database](#database-interview-questions)                        | [Link](https://github.com/lakshaykamat/sde-notes/blob/main/Learning%20Resources/Databases/Interview%20Questions.md)                          |
+| SQL                                                              | Link                                                                                                                                         |
+| [MongoDB](#mongodb-interview-questions)                          | [Link](https://github.com/lakshaykamat/sde-notes/blob/main/Learning%20Resources/Databases/MongoDB/Interview%20Questions.md)                  |
 ---
 
 # Practical Problems
 | Title                                     | Full Link                                                                                                                                |
 |-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | [Javascript](#javascript-coding-problems) | [Link](https://github.com/lakshaykamat/sde-notes/blob/main/Learning%20Resources/Programming%20Languages/Javascript/Coding%20Problems.md) |
+| [MongoDB](#mongodb-coding-problems)       | [Link](https://github.com/lakshaykamat/sde-notes/blob/main/Learning%20Resources/Databases/MongoDB/Coding%20Problem.md)                   |
 
 
 # React Interview Questions
@@ -1127,7 +1131,502 @@ promise.then((message) => {
   - **401 Unauthorized**: The request requires authentication, but the client has not provided valid credentials.
   - **403 Forbidden**: The client’s credentials are valid, but they do not have
 
+# MongoDB Interview Questions
+
+### 1. What is MongoDB?
+
+MongoDB is a document-oriented NoSQL database that stores data in flexible, JSON-like documents. It is designed for high performance, high availability, and easy scalability, making it suitable for handling large volumes of data.
+
+### 2. What are the advantages of using MongoDB?
+
+- **Flexible Schema**: MongoDB allows for a dynamic schema, enabling easy modifications to the data model.
+- **Scalability**: It supports horizontal scaling through sharding, distributing data across multiple servers.
+- **High Performance**: Optimized for read and write operations, making it suitable for high-traffic applications.
+- **Rich Query Language**: Supports complex queries, including filtering, sorting, and aggregation.
+- **Built-in Replication**: Ensures data availability and redundancy through replica sets.
+
+### 3. What is BSON?
+
+BSON (Binary JSON) is a binary-encoded serialization format used by MongoDB to store documents. It extends JSON by adding support for additional data types, such as dates and binary data, and is designed for efficient storage and retrieval.
+
+### 4. Explain the structure of a MongoDB document.
+
+A MongoDB document is a set of key-value pairs, similar to a JSON object. Each document can contain various data types, including arrays and nested documents, allowing for a rich and flexible data representation.
+
+### 5. What is a collection in MongoDB?
+
+A collection is a grouping of MongoDB documents, analogous to a table in relational databases. Collections do not enforce a schema, allowing documents within the same collection to have different structures.
+
+### 6. How do you perform queries in MongoDB?
+
+Queries in MongoDB are performed using the `find` method. This method retrieves documents from a collection based on specified criteria. For example:
+
+```javascript
+db.collection.find({ "field": "value" })
+```
+
+### 7. What is an upsert operation in MongoDB?
+
+An "upsert" is a combination of "update" and "insert." It updates an existing document if it matches the specified criteria or inserts a new document if no match is found. This operation is facilitated by the `update` method with the `upsert` option set to true.
+
+### 8. How does MongoDB handle relationships between documents?
+
+MongoDB does not support traditional foreign key constraints. Instead, relationships can be managed using embedded documents (storing related data within a single document) or by referencing documents (storing references to other documents' IDs).
+
+### 9. What is sharding in MongoDB?
+
+Sharding is the process of distributing data across multiple servers or shards to handle large datasets and high throughput operations. Each shard is a separate database instance that holds a subset of the data, allowing for horizontal scaling.
+
+### 10. What are indexes in MongoDB, and why are they important?
+
+Indexes in MongoDB are special data structures that improve the speed of data retrieval operations. They allow for efficient querying by providing quick access paths to documents based on indexed fields. Proper indexing is crucial for optimizing query performance and reducing response times.
+
+### 11. What are some of the advantages of using MongoDB?
+
+- **Flexible Schema**: MongoDB allows for a dynamic schema, enabling easy modifications to the data model.
+- **Scalability**: It supports horizontal scaling through sharding, distributing data across multiple servers.
+- **High Performance**: Optimized for read and write operations, making it suitable for high-traffic applications.
+- **Rich Query Language**: Supports complex queries, including filtering, sorting, and aggregation.
+- **Built-in Replication**: Ensures data availability and redundancy through replica sets.
+
+### 12. When should you use MongoDB?
+
+MongoDB is suitable for applications that require rapid development and scalability, such as:
+
+- Applications with evolving data requirements.
+- Systems that need to handle large volumes of read and write operations.
+- Projects that require flexible data models, such as content management systems or real-time analytics.
+
+### 13. What is the significance of BSON in MongoDB?
+
+BSON (Binary JSON) is a binary-encoded serialization format used by MongoDB to store documents. It extends JSON by adding support for additional data types, such as dates and binary data, and is designed for efficient storage and retrieval. This binary format allows MongoDB to optimize data handling compared to text-based JSON.
+
+### 14. Describe the structure of a MongoDB document.
+
+A MongoDB document is composed of key-value pairs, similar to a JSON object. Each document can contain various data types, including arrays and nested documents, allowing for a rich and flexible data representation.
+
+### 15. Explain the SET modifier in MongoDB.
+
+The `$set` operator is used to update the value of a field in a document. If the field does not exist, `$set` will create it. This is useful for modifying existing documents without overwriting the entire document. For example:
+
+```javascript
+db.collection.updateOne(
+   { "_id": ObjectId("document_id") },
+   { "$set": { "newField": "newValue" } }
+)
+```
+
+### 16. What is a replica set in MongoDB?
+
+A replica set is a group of MongoDB servers that maintain the same data set, providing redundancy and high availability. It consists of a primary node (which receives all write operations) and one or more secondary nodes (which replicate the data from the primary). If the primary node fails, one of the secondary nodes can be elected as the new primary.
+
+### 17. How does MongoDB handle data consistency?
+
+MongoDB provides eventual consistency by default in sharded clusters, meaning that data might not be immediately consistent across all nodes. However, it offers strong consistency for single-document operations, ensuring that once a write operation is acknowledged, subsequent reads will return the updated data.
+
+### 18. What is the purpose of the `aggregate` function in MongoDB?
+
+The `aggregate` function is used to process data and return computed results. It allows for the execution of complex data processing operations, such as filtering, grouping, and sorting, on the data stored in a collection. The aggregation framework provides a powerful way to perform operations like calculating averages, sums, and counts.
+
+### 19. How can you import and export data in MongoDB?
+
+Data can be imported and exported in MongoDB using the following tools:
+
+- **mongoimport**: Used to import data from JSON, CSV, or TSV files into a MongoDB collection.
+- **mongoexport**: Used to export data from a MongoDB collection to a JSON or CSV file.
+
+Example of importing data:
+
+```bash
+mongoimport --db database_name --collection collection_name --file data.json
+```
+
+### 20. What is sharding, and how does it work in MongoDB?
+
+Sharding is the process of distributing data across multiple servers or shards to handle large datasets and high throughput operations. Each shard is a separate database instance that holds a subset of the data. MongoDB automatically manages the distribution of data and queries across the shards, allowing for horizontal scaling and improved performance.
+
+
+# Database Interview Questions
+
+### 1. What is DBMS and what is its utility?
+
+DBMS stands for Database Management System. It is a software system that enables users to create, maintain, control and access a database efficiently. DBMS provides an interface for performing various operations such as inserting, deleting, updating data in a database. It helps overcome issues like data redundancy, inconsistency and makes data management more organized and secure compared to traditional file-based systems.
+
+### 2. What are the advantages of DBMS over file-based systems?
+
+Some key advantages of DBMS over file-based systems include:
+
+- Reduced data redundancy and inconsistency
+- Easier data access and management 
+- Enforced data integrity
+- Atomicity of updates
+- Ability to handle concurrent access by multiple users
+- Improved data security and privacy
+
+### 3. What is a database?
+
+A database is an organized, consistent and logical collection of interrelated data that can be easily accessed, managed and updated. It typically consists of one or more tables, where each table contains a set of related data organized into rows and columns. The columns represent attributes or fields, while each row represents a record or tuple.
+
+### 4. What are the different types of database models?
+
+The main types of database models are:
+
+1. **Hierarchical model** - Data is organized into a tree-like structure with parent-child relationships.
+
+2. **Network model** - Allows for multiple parent-child relationships, forming a graph-like structure.
+
+3. **Relational model** - Data is stored in tables with rows and columns. Tables can be related to each other using keys.
+
+4. **Object-oriented model** - Data and methods are encapsulated into objects which are instances of classes.
+
+5. **Entity-relationship model** - Conceptual model that views the real world as entities and relationships[1][4].
+
+### 5. What is a primary key and a foreign key?
+
+A **primary key** is a column or a set of columns that uniquely identifies each row in a table. It cannot contain NULL values and there can be only one primary key per table.
+
+A **foreign key** is a column or a set of columns that refers to the primary key of another table. It establishes a link between two tables, allowing data from one table to reference data in the associated table.
+
+### 6. What is database normalization?
+
+Database normalization is a process of organizing data in a database to reduce redundancy and dependency. It involves decomposing a table into smaller tables and defining relationships between them. The main goals are to:
+
+1. Minimize data redundancy 
+2. Eliminate insertion, update and deletion anomalies
+3. Simplify queries
+
+Some common normal forms are 1NF, 2NF, 3NF, BCNF, 4NF and 5NF.
+
+### 7. What is a stored procedure and a trigger?
+
+A **stored procedure** is a set of SQL statements with an assigned name that are stored in the database. They can take parameters, perform complex operations and return values. Stored procedures help encapsulate business logic and improve performance.
+
+A **trigger** is a special type of stored procedure that automatically executes when a specific event occurs on a table, such as an insert, update or delete operation. Triggers are commonly used to maintain data integrity and enforce business rules.
+
+### 8. How can database performance be monitored and improved?
+
+Database performance can be monitored and improved using techniques like:
+
+- Regular monitoring of key metrics like CPU usage, memory, disk I/O, query times
+- Optimizing slow queries using execution plans, indexing, rewriting
+- Creating and maintaining indexes on frequently used columns
+- Configuring database parameters for specific workloads
+- Upgrading hardware components like CPU, memory, storage
+- Partitioning large tables to distribute data across disks
+- Performing routine maintenance tasks like vacuuming, reindexing
+
+### 9. What are the best practices for database backup and recovery?
+
+Best practices for database backup and recovery include:
+
+- Taking regular full and incremental backups 
+- Testing backup and restore procedures
+- Deploying redundant database servers and storage
+- Establishing a disaster recovery site in a separate location
+- Implementing automated monitoring and alerting
+- Documenting disaster recovery procedures
+- Conducting regular disaster recovery testing
+- Ensuring compliance with regulatory requirements
+
+### 10. How do you restore a database from a backup?
+
+To restore a database from a backup:
+
+1. Identify the most recent backup to restore
+2. Prepare the environment with sufficient storage space
+3. Stop any services or applications accessing the database 
+4. Restore the database backup using the appropriate tools
+5. Verify the integrity and completeness of the restored database
+6. Restart services and applications once restore is complete
+
+### 11. What is the difference between a clustered and a non-clustered index?
+
+A **clustered index** determines the physical order of data in a table. There can be only one clustered index per table, as the data rows themselves are stored in this order. 
+
+A **non-clustered index**, on the other hand, maintains a separate structure from the data rows. It contains pointers to the actual data, allowing for more than one non-clustered index per table. This type of index is useful for speeding up queries that do not require the data to be in a specific order.
+
+### 12. What is ACID compliance in databases?
+
+ACID stands for Atomicity, Consistency, Isolation, and Durability. These properties ensure reliable processing of database transactions:
+
+- **Atomicity** ensures that all operations within a transaction are completed successfully; if not, the transaction is aborted.
+  
+- **Consistency** guarantees that a transaction will bring the database from one valid state to another, maintaining all predefined rules.
+  
+- **Isolation** ensures that transactions occur independently without interference, even if they are executed concurrently.
+  
+- **Durability** means that once a transaction is committed, it will remain so, even in the event of a system failure.
+
+### 13. What is denormalization, and why is it used?
+
+Denormalization is the process of intentionally introducing redundancy into a database by merging tables or adding redundant data. This is done to improve read performance and reduce the complexity of queries, particularly in scenarios where read operations are more frequent than write operations. While it can enhance performance, it may also lead to data anomalies and increased storage requirements.
+
+### 14. Explain the concept of a view in a database.
+
+A **view** is a virtual table that is based on the result of a SELECT query. It does not store data physically but provides a way to simplify complex queries, encapsulate logic, and present data in a specific format. Views can be used to restrict access to certain data or to aggregate data from multiple tables.
+
+### 15. What is the purpose of a transaction log?
+
+A **transaction log** is a file that records all transactions and modifications made to a database. It plays a crucial role in ensuring data integrity and recovery. In the event of a failure, the transaction log can be used to restore the database to its last consistent state by replaying or rolling back transactions.
+
+### 16. What are the different types of relationships in databases?
+
+In databases, there are three primary types of relationships:
+
+1. **One-to-One**: Each record in one table corresponds to a single record in another table.
+  
+2. **One-to-Many**: A single record in one table can be associated with multiple records in another table.
+  
+3. **Many-to-Many**: Records in one table can be related to multiple records in another table, typically managed through a junction table.
+
+### 17. What is a data warehouse?
+
+A **data warehouse** is a centralized repository that stores large volumes of historical data from various sources. It is designed for query and analysis rather than transaction processing. Data warehouses support business intelligence activities, including reporting, data mining, and decision-making.
+
+### 18. What is a schema in a database?
+
+A **schema** is a logical structure that defines how data is organized in a database. It includes the definitions of tables, fields, relationships, views, indexes, and other elements. Schemas help to enforce data integrity and provide a blueprint for the database's structure.
+
+### 19. What is the purpose of indexing in databases?
+
+Indexing is a technique used to improve the speed of data retrieval operations on a database table. An index creates a data structure that allows for faster searches by providing a quick lookup mechanism. While indexes can significantly enhance performance, they also require additional storage space and can slow down write operations due to the need to maintain the index.
+
+### 20. How do you ensure data integrity in a database?
+
+Data integrity can be ensured through various methods, including:
+
+- **Constraints**: Enforcing rules at the database level, such as primary keys, foreign keys, unique constraints, and check constraints.
+  
+- **Transactions**: Using ACID properties to ensure that operations are completed successfully and consistently.
+  
+- **Validation**: Implementing application-level validation to check data before it is entered into the database.
+
+- **Regular Audits**: Conducting periodic checks to identify and rectify any data inconsistencies or errors.
+## 11. What is the purpose of a transaction log in a database?
+
+The transaction log records all transactions and modifications made to a database. It is crucial for ensuring data integrity and enabling recovery in case of failures. By replaying or rolling back transactions from the log, the database can be restored to its last consistent state.
+
+Data integrity can be maintained through various methods:
+
+- **Constraints**: Enforcing rules like primary keys, foreign keys, unique constraints, and check constraints at the database level.
+- **Transactions**: Using ACID properties to ensure operations are completed successfully and consistently. 
+- **Validation**: Implementing application-level validation to check data before inserting into the database.
+- **Regular Audits**: Conducting periodic checks to identify and fix any data inconsistencies or errors.
+
+## 21. What is the purpose of normalization in databases?
+
+Normalization is the process of organizing data in a database to reduce redundancy and dependency. The main goals are:
+
+1. Minimize data redundancy 
+2. Eliminate insertion, update and deletion anomalies
+3. Simplify queries
+
+Some common normal forms are 1NF, 2NF, 3NF, BCNF, 4NF and 5NF.
+
+A **clustered index** determines the physical order of data in a table. There can be only one clustered index per table, as the data rows themselves are stored in this order.
+
+A **non-clustered index** maintains a separate structure from the data rows. It contains pointers to the actual data, allowing for more than one non-clustered index per table. This is useful for speeding up queries that do not require the data to be in a specific order.
+
+## 22. What is the purpose of a view in a database?
+
+A **view** is a virtual table based on the result of a SELECT query. It does not store data physically but provides a way to simplify complex queries, encapsulate logic, and present data in a specific format. Views can be used to restrict access to certain data or aggregate data from multiple tables.
+
+## 23. What is the difference between a primary key and a foreign key?
+
+A **primary key** is a column or set of columns that uniquely identifies each row in a table. It cannot contain NULL values and there can be only one primary key per table.
+
+A **foreign key** is a column or set of columns that refers to the primary key of another table. It establishes a link between two tables, allowing data from one table to reference data in the associated table.
+
+## 24. What is the purpose of ACID compliance in databases?
+
+ACID stands for Atomicity, Consistency, Isolation, and Durability. These properties ensure reliable processing of database transactions:
+
+- **Atomicity** ensures all operations in a transaction are completed successfully; if not, the transaction is aborted.
+- **Consistency** guarantees a transaction will bring the database from one valid state to another, maintaining all predefined rules.
+- **Isolation** ensures transactions occur independently without interference, even if executed concurrently.
+- **Durability** means once a transaction is committed, it will remain so, even in the event of a system failure.
+
+## 25. What is the purpose of a data warehouse?
+
+A **data warehouse** is a centralized repository that stores large volumes of historical data from various sources. It is designed for query and analysis rather than transaction processing. Data warehouses support business intelligence activities like reporting, data mining, and decision-making.
+
+The three primary types of relationships in databases are:
+
+1. **One-to-One**: Each record in one table corresponds to a single record in another table.
+2. **One-to-Many**: A single record in one table can be associated with multiple records in another table. 
+3. **Many-to-Many**: Records in one table can be related to multiple records in another table, typically managed through a junction table.
+
+## 26. How do you monitor and improve database performance?
+
+Database performance can be monitored and improved using techniques like:
+
+- Regular monitoring of metrics like CPU usage, memory, disk I/O, query times
+- Optimizing slow queries using execution plans, indexing, rewriting
+- Creating and maintaining indexes on frequently used columns
+- Configuring database parameters for specific workloads
+- Upgrading hardware components like CPU, memory, storage
+- Partitioning large tables to distribute data across disks
+- Performing routine maintenance tasks like vacuuming, reindexing
+
+
 ---
+
+
+# MongoDB Coding Problems
+
+### 1. Insert Multiple Documents into a Collection
+**Problem:** Insert multiple documents into a collection named `students` with fields `name`, `age`, and `grade`.
+
+**Solution:**
+```javascript
+db.students.insertMany([
+  { name: "John", age: 18, grade: "A" },
+  { name: "Jane", age: 19, grade: "B" },
+  { name: "Alice", age: 17, grade: "A" }
+]);
+```
+
+### 2. Find Documents with a Specific Field Value
+**Problem:** Find all documents in the `products` collection where the `category` field is `"electronics"`.
+
+**Solution:**
+```javascript
+db.products.find({ category: "electronics" });
+```
+
+### 3. Update a Document by Adding a New Field
+**Problem:** Update a document in the `users` collection to add a new field `lastLogin` with the current date.
+
+**Solution:**
+```javascript
+db.users.updateOne(
+  { _id: 102 },
+  { $set: { lastLogin: new Date() } }
+);
+```
+
+### 4. Delete Documents Based on a Condition
+**Problem:** Delete all documents from the `events` collection where the `eventDate` is in the past.
+
+**Solution:**
+```javascript
+db.events.deleteMany({
+  eventDate: { $lt: new Date() }
+});
+```
+
+### 5. Increment a Numeric Field in a Document
+**Problem:** Increment the `views` field by 10 for all documents in the `articles` collection where the `status` is `"published"`.
+
+**Solution:**
+```javascript
+db.articles.updateMany(
+  { status: "published" },
+  { $inc: { views: 10 } }
+);
+```
+
+### 6. Aggregate Data Using `$group` and `$sum`
+**Problem:** Create an aggregation pipeline to calculate the total sales for each `productId` in the `sales` collection.
+
+**Solution:**
+```javascript
+db.sales.aggregate([
+  { $group: { _id: "$productId", totalSales: { $sum: "$quantity" } } }
+]);
+```
+
+### 7. Find Documents with an Array Field Matching Criteria
+**Problem:** Find all documents in the `books` collection where the `authors` array contains `"John Doe"`.
+
+**Solution:**
+```javascript
+db.books.find({ authors: "John Doe" });
+```
+
+### 8. Project Specific Fields from Documents
+**Problem:** Find all documents in the `employees` collection and return only the `name` and `salary` fields.
+
+**Solution:**
+```javascript
+db.employees.find(
+  {},
+  { _id: 0, name: 1, salary: 1 }
+);
+```
+
+### 9. Sort Documents by a Field
+**Problem:** Retrieve all documents from the `orders` collection and sort them by the `orderDate` in ascending order.
+
+**Solution:**
+```javascript
+db.orders.find().sort({ orderDate: 1 });
+```
+
+### 10. Use `$lookup` to Perform a Join
+**Problem:** Join the `orders` collection with the `customers` collection using the `customerId` field and return the combined details.
+
+**Solution:**
+```javascript
+db.orders.aggregate([
+  {
+    $lookup: {
+      from: "customers",
+      localField: "customerId",
+      foreignField: "_id",
+      as: "customerDetails"
+    }
+  }
+]);
+```
+
+### 11. Create an Index on a Field
+**Problem:** Create an index on the `username` field in the `accounts` collection to optimize query performance.
+
+**Solution:**
+```javascript
+db.accounts.createIndex({ username: 1 });
+```
+
+### 12. Remove a Specific Field from All Documents
+**Problem:** Remove the `temporary` field from all documents in the `sessions` collection.
+
+**Solution:**
+```javascript
+db.sessions.updateMany(
+  {},
+  { $unset: { temporary: "" } }
+);
+```
+
+### 13. Find Documents with a Range Condition
+**Problem:** Find all documents in the `transactions` collection where the `amount` is between 200 and 1000.
+
+**Solution:**
+```javascript
+db.transactions.find({
+  amount: { $gte: 200, $lte: 1000 }
+});
+```
+
+### 14. Count the Number of Documents Matching a Condition
+**Problem:** Count the number of documents in the `users` collection where `isActive` is `true`.
+
+**Solution:**
+```javascript
+db.users.countDocuments({ isActive: true });
+```
+
+### 15. Use `$unwind` to Flatten an Array Field
+**Problem:** Write an aggregation query to unwind the `tags` array in the `posts` collection and list each tag with its associated post.
+
+**Solution:**
+```javascript
+db.posts.aggregate([
+  { $unwind: "$tags" },
+  { $group: { _id: "$tags", posts: { $push: "$$ROOT" } } }
+]);
+```
 
 # Javascript Coding Problems
 | # | Question                                                                                                                                                                                                                                | Difficulty |
