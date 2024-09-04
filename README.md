@@ -45,7 +45,7 @@ Welcome to my curated collection of Software Development notes, resources, and p
 | [Javascript](#javascript-coding-problems) | [Link](https://github.com/lakshaykamat/sde-notes/blob/main/Learning%20Resources/Programming%20Languages/Javascript/Coding%20Problems.md) |
 
 
-## React Interview Questions
+# React Interview Questions
 ### 1. **What is React, and why is it used?**
 
 **Answer:** React is a JavaScript library for building user interfaces, particularly single-page applications where you need a fast, interactive, and dynamic UI. React allows developers to build web applications that can update and render efficiently in response to data changes. It’s used because of its component-based architecture, virtual DOM, and declarative nature, which makes managing the UI state easier and improves performance.
@@ -354,7 +354,7 @@ function MyForm() {
 
 These questions and answers cover a wide range of topics in React, from basic to advanced concepts. Preparing with these will give you a strong foundation for React interviews.
 
-## Javascript Interview Questions
+# Javascript Interview Questions
 ### 1. What is JavaScript?
 
 **Answer:**  
@@ -784,7 +784,7 @@ promise.then((message) => {
 });
 ```
 
-## Nodejs Interview Questions
+# Nodejs Interview Questions
 ### 1. **What is Node. Js?**
    **Answer**: 
    Node. Js is a runtime environment that allows developers to execute JavaScript code on the server-side. It is built on the V 8 JavaScript engine, which is also used by Google Chrome, and uses an event-driven, non-blocking I/O model, making it efficient and scalable for building web applications.
@@ -863,7 +863,7 @@ promise.then((message) => {
    - **Authentication**: Implement secure authentication using JWT, OAuth, etc.
    - **Environment Variables**: Use environment variables to store sensitive information.
 
-## Javascript Coding Problems
+# Javascript Coding Problems
 | # | Question                                                                                                                                                                                                                                | Difficulty |
 |---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
 | 1 | [Write a function in JavaScript to remove duplicate elements from an array.](https://github.com/lakshaykamat/sde-notes/blob/main/Career%20Preparation/javascript-questions/easy/removeDuplicates.js)                                    | Easy       |
