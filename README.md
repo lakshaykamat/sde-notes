@@ -28,13 +28,12 @@ Welcome to my curated collection of Software Development notes, resources, and p
    - [Databases](https://github.com/lakshaykamat/sde-notes/blob/main/Roadmap/Databases.md): A step-by-step guide to mastering databases, from basics to advanced concepts.
    - [MongoDB](https://github.com/lakshaykamat/sde-notes/blob/main/Roadmap/MongoDB.md): A step-by-step guide to mastering MongoDB
    - [Node. Js](https://github.com/lakshaykamat/sde-notes/blob/main/Roadmap/Node.md): A comprehensive roadmap for becoming a proficient Node. Js developer.
-   - [Reactjs](https://github.com/lakshaykamat/sde-notes/blob/main/Roadmap/Reactjs.md)
+   - [Reactjs](https://github.com/lakshaykamat/sde-notes/blob/main/Roadmap/Reactjs.md): Learn about react fundamentals and thoery will help you in cracking interviews
 
 ---
 # Interview Questions
-1. ReactJS
-2. JavaScript
-
+1. [ReactJS](#react-interview-questions)
+2. [JavaScript](#javascript-interview-questions)
 ---
 
 ## React Interview Questions
